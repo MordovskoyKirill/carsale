@@ -1,0 +1,68 @@
+.filter-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: repeat(3, auto);
+    gap: 7px 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.filter-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-panel select,
+.filter-panel input {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    font-family: 'Roboto';
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #1f2f3a;
+}
+
+.filter-panel button {
+    grid-column: 3;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #364FA1;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 50px;
+}
+
+.filter-panel button:hover {
+    opacity: 0.8;
+}
+
+.filter-FromTo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
+
+.filter-FromTo .filter-From {
+    border-radius: 10px 0 0 10px;
+}
+
+.filter-FromTo .filter-To {
+    border-radius: 0 10px 10px 0;
+}
+
+.filter-panel input[type="number"]::-webkit-inner-spin-button,
+.filter-panel input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.filter-panel input[type="number"] {
+    -moz-appearance: textfield;
+}

@@ -1,0 +1,83 @@
+.advertisement {
+    display: flex;
+    font-family: 'Roboto';
+    justify-content: center;
+    width: 900px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    margin: 50px auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.advertisement-back{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    color: #364FA1;
+    font-size: 22px;
+    font-family: 'Roboto';
+    text-decoration: none;
+    flex-shrink: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.ad-name img {
+    padding-top: 10px;
+    height: 230px;
+}
+
+.description {
+    padding-top: 45px;
+    padding-left: 60px;
+    font-size: 16px;
+}
+
+.grid-descript {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(6, 25px);
+    padding-top: 20px;
+}
+
+.comment {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 300px;
+}
+
+.btn {
+    border-radius: 10px;
+    border: none;
+    background-color: #364FA1;
+    color: #FFFFFF;
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+}
+
+.ad-name, .price {
+    font-size: 32px;
+}
+
+.ad-name {
+    padding-left: 150px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+.gallery img {
+    width: 90px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}

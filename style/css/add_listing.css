@@ -1,0 +1,81 @@
+.listing-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 60px 0;
+}
+
+.listing-card {
+    width: 500px;
+    background: #DFE7F8;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.listing-inner {
+    padding: 20px;
+}
+
+.listing-title {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    color: #000000;
+    margin: 0 0 16px 0;
+}
+
+.textarea-field {
+    height: 100px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.photo-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.photo-upload:hover {
+    background: #f0f4ff;
+}
+
+.photo-icon-img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 6px;
+}
+
+.photo-text {
+    font-size: 14px;
+    color: #8C8C8C;
+    font-family: 'Roboto';
+}
+
+.photo-preview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.photo-current {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.photo-current img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}

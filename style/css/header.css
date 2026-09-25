@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    align-items: center;
+    background: #364FA1;
+    padding: 12px 30px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header-title {
+    text-decoration: none;
+    flex-shrink: 0;
+    margin-left: 20px;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-title p {
+    color: white;
+    font-size: 40px;
+    font-family: 'ScienceGothic';
+}
+
+.header-search {
+    flex: 1;
+    max-width: 540px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-search input {
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    outline: none;
+}
+
+.header-menu {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.header-menu button {
+    padding: 7px 45px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    background: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header-menu button:hover {
+    background: #DFE7F8;
+}
+
+.header-menu button.btn-accent {
+    background: #A13636;
+    color: white;
+}
+
+.header-menu button.btn-accent:hover {
+    background: white;
+    color: black;
+}
+
+.header-menu button.btn-chat {
+    padding: 7px 20px;
+}
+
+.header-menu button.btn-user {
+    padding: 3px 12px;
+}
+
+.header-menu button.btn-logout {
+    padding: 4px 14px;
+}

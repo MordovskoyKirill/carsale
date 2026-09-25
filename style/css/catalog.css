@@ -1,0 +1,71 @@
+.catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.catalog > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.catalog-box {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 15px;
+}
+
+.catalog-box img {
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.catalog-text {
+    display: grid;
+    grid-template-columns: 1fr 130px 220px;
+    grid-template-rows: 45px 70px 40px;
+    font-family: 'Roboto';
+    padding: 5px;
+    flex: 1;
+}
+
+.model, .price, .year {
+    font-size: 30px;
+}
+
+.user-text, .mileage, .description {
+    font-size: 16px;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, 20px);
+    font-weight: 300;
+}
+
+.price { grid-column: 3; grid-row: 1; }
+.mileage { grid-column: 2; grid-row: 2; }
+.user-text { grid-row: 3; }
+
+.region {
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.catalog-box:hover{
+    background-color: #DFE7F8;
+}

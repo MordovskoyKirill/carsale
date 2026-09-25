@@ -1,0 +1,108 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 60px 0 20px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.profile-title {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    color: #000000;
+    margin: 0 0 16px 0;
+}
+
+.profile-info {
+    padding-left: 140px;
+}
+
+.profile-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #364FA1;
+    font-size: 22px;
+    font-family: 'Roboto';
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.profile-field {
+    margin-bottom: 15px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #1f2f3a;
+}
+
+.profile-ads-title {
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.profile-ads {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 940px;
+    margin: 0 auto 50px;
+}
+
+.profile-ad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.profile-ad > a {
+    flex: 1;
+    text-decoration: none;
+    color: black;
+}
+
+.profile-ad-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.btn-edit {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #364FA1;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.btn-edit:hover {
+    background: #2b3f85;
+}
+
+.empty {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #666;
+}

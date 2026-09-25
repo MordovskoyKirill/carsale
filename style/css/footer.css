@@ -1,0 +1,54 @@
+.footer {
+    background: #364FA1;
+    color: white;
+    padding: 57px 201px;
+    margin-top: 50px;
+}
+
+.footer-copyright {
+    padding-top: 111px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.footer-col h3 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.footer-col p,
+.footer-col a {
+    display: block;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-weight: 300;
+}
+
+.footer-col .footer-title {
+    color: white;
+    font-size: 40px;
+    font-family: 'ScienceGothic';
+}
+
+.footer-col img {
+    padding-left: 22px;
+}
+
+
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
