@@ -21,8 +21,9 @@ if (!check_csrf_token($_POST['csrf_token'] ?? '')) {
 $sender_id   = intval($_SESSION['user_id']);
 $receiver_id = intval($_POST['receiver_id'] ?? 0);
 $ad_id       = intval($_POST['advertisement_id'] ?? 0);
+$text        = trim($_POST['text'] ?? '');
 
-if (empty($receiver_id) || empty($text)) {
+if (empty($receiver_id) || $text === '') {
     echo json_encode(['error' => 'Пустое сообщение']);
     exit;
 }
@@ -38,9 +39,9 @@ if (mysqli_num_rows($check) === 0) {
     exit;
 }
 
-$text_esc  = mysqli_real_escape_string($conn, $_POST['text'] ?? '');
-$ad_value  = $ad_id > 0 ? $ad_id : 'NULL';
-$created   = date('Y-m-d H:i:s');
+$text_esc = mysqli_real_escape_string($conn, $text);
+$ad_value = $ad_id > 0 ? $ad_id : 'NULL';
+$created  = date('Y-m-d H:i:s');
 
 $query = "INSERT INTO Messages (Sender_ID, Receiver_ID, Advertisement_ID, Text, Created_date, IsRead)
           VALUES ($sender_id, $receiver_id, $ad_value, '$text_esc', '$created', 0)";
