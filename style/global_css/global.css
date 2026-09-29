@@ -18,6 +18,10 @@ body {
     flex: 1;
 }
 
+a{
+    text-decoration: none;
+}
+
 my-footer {
     margin-top: auto;
 }
